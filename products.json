@@ -1,0 +1,50 @@
+[
+    {
+        "id":1,
+        "name":"Air force 1",
+        "price":156,
+        "image":"images/New folder/force1.webp"
+    },
+    {
+        "id":2,
+        "name":"Air max 90",
+        "price":78,
+        "image":"images/New folder/max90.webp"
+    },
+    {
+        "id":3,
+        "name":"Jordan j4s",
+        "price":90,
+        "image":"images/New folder/jj4.webp"
+    },
+    {
+        "id":4,
+        "name":"Jordan j9s black",
+        "price":160,
+        "image":"images/New folder/j9.webp"
+    },
+    {
+        "id":5,
+        "name":"Jordan outdoor sneakers",
+        "price":156,
+        "image":"images/New folder/jordan.png"
+    },
+    {
+        "id":6,
+        "name":"Jordan j9s blue",
+        "price":200,
+        "image":"images/New folder/jp.webp"
+    },
+    {
+        "id":7,
+        "name":"Naked wolfe black",
+        "price":200,
+        "image":"images/New folder/wolf.webp"
+    },
+    {
+        "id":8,
+        "name":"Air jordan sneakers",
+        "price":65,
+        "image":"images/New folder/jor.png"
+    }
+]

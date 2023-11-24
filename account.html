@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>SHORTCUT KE</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <link rel="stylesheet" href="style.css">
+</head>
+<main>
+    <section id="header">
+        <h4>Makumu Footwear</h4>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="account.html">Account</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+            <div class="cart">
+                <a class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <span>0</span>
+            </div>
+            </ul>
+            
+        </div>
+    </section>
+
+<!--Account/login-->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                
+            </div>
+            <div class="col-2">
+               <div class="form-container">
+                   <div class="form-btn">
+                    <span onclick="loger()">Login</span>
+                    <span onclick="reger()">Register</span>
+                    <hr id="Indicator">
+                    </div>
+                    <form id="loginform">
+                        <input type="email" id="loginEmail" placeholder="Email">
+                        <input type="password" id="loginPassword" placeholder="Password">
+                        <a href="index.html">
+                            <button type="button" class="btn" onclick="login()">Login</button>
+                        </a>
+                        <a href="">Forgot password</a>
+                    </form>
+
+                    <form id="regform">
+                        <input type="text" id="regUsername" placeholder="Username">
+                        <input type="email" id="regEmail" placeholder="Email">
+                        <input type="password" id="regPassword" placeholder="password">
+                        <a href="index.html">
+                            <button type="button" class="btn" onclick="register()">Register</button>
+                        </a>
+                        
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/10.5.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js"></script>
+<script src="index.js"></script>
+<script>
+    var loginform = document.getElementById("loginform");
+    var regform = document.getElementById("regform");
+    var Indicator = document.getElementById("Indicator");
+    function reger(){
+        regform.style.transform="translateX(0px)";
+        loginform.style.transform="translateX(0px)";
+        Indicator.style.transform="translateX(100px)";
+    }
+    function loger(){
+        regform.style.transform="translateX(300px)";
+        loginform.style.transform="translateX(300px)";
+        Indicator.style.transform="translateX(0px)";
+    }
+</script>
+
+
+
+
+</main>
+
+</html>
